@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caminhões Usados: Como Escolher o Modelo Ideal Sem Prejuízo em 2026 – SelecTrucks</title>
+  <meta name="description" content="Saiba como escolher caminhões usados sem prejuízo em 2026. Dicas essenciais para fazer um bom negócio com segurança e economia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --red: #cc0000;
+      --red-dark: #a80000;
+      --gray-dark: #1a1a1a;
+      --gray-mid: #555;
+      --gray-light: #f5f5f5;
+      --border: #e0e0e0;
+      --green: #25d366;
+      --white: #fff;
+    }
+    body { font-family: 'Inter', sans-serif; color: var(--gray-dark); background: var(--white); }
+    a { text-decoration: none; color: inherit; }
+
+    /* TOPBAR */
+    .topbar { background: #111; padding: 7px 0; }
+    .topbar-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    .topbar-links { display: flex; gap: 20px; }
+    .topbar-links a { color: #bbb; font-size: 12px; }
+    .topbar-links a:hover { color: #fff; }
+    .topbar-btns { display: flex; gap: 8px; }
+    .btn-red { background: var(--red); color: #fff; font-size: 12px; font-weight: 600; padding: 5px 14px; border-radius: 4px; }
+    .btn-red:hover { background: var(--red-dark); }
+    .btn-green { background: var(--green); color: #fff; font-size: 12px; font-weight: 600; padding: 5px 14px; border-radius: 4px; }
+    .btn-green:hover { background: #1da851; }
+
+    /* HEADER */
+    header { background: var(--white); border-bottom: 2px solid var(--border); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,.07); }
+    .header-inner { max-width: 1200px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 22px; font-weight: 800; color: var(--red); letter-spacing: -1px; }
+    .logo span { color: var(--gray-dark); }
+    nav { display: flex; gap: 24px; }
+    nav a { font-size: 13px; font-weight: 500; color: var(--gray-dark); transition: color .2s; }
+    nav a:hover { color: var(--red); }
+
+    /* HERO */
+    .hero { position: relative; background: #111; }
+    .hero-img-placeholder {
+      width: 100%; height: 480px;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 12px; color: #555; border: 2px dashed #333;
+    }
+    .hero-img-placeholder .icon { font-size: 48px; }
+    .hero-img-placeholder p { font-size: 14px; }
+    .hero-img-placeholder span { font-size: 12px; color: #444; }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,.3) 60%, transparent 100%);
+      display: flex; align-items: flex-end;
+    }
+    .hero-content { max-width: 860px; margin: 0 auto; padding: 40px 20px; width: 100%; }
+    .hero-cat { display: inline-block; background: var(--red); color: #fff; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 12px; border-radius: 3px; margin-bottom: 14px; }
+    .hero h1 { font-size: clamp(20px, 3.5vw, 36px); font-weight: 800; color: #fff; line-height: 1.2; max-width: 700px; }
+    .hero-meta { margin-top: 14px; font-size: 13px; color: rgba(255,255,255,.7); display: flex; align-items: center; gap: 8px; }
+
+    /* CONTENT */
+    .content-wrap { max-width: 800px; margin: 0 auto; padding: 52px 20px; }
+
+    .share-bar { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; padding-bottom: 28px; border-bottom: 1px solid var(--border); }
+    .share-bar p { font-size: 13px; font-weight: 600; color: var(--gray-mid); }
+    .share-btn { width: 34px; height: 34px; border-radius: 50%; background: var(--gray-dark); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; transition: background .2s, transform .2s; cursor: pointer; }
+    .share-btn:hover { background: var(--red); transform: scale(1.1); }
+
+    .article-body { font-size: 16px; line-height: 1.9; color: #333; }
+    .article-body p { margin-bottom: 20px; }
+    .article-body h2 { font-size: 22px; font-weight: 700; color: var(--gray-dark); margin: 44px 0 16px; padding-bottom: 10px; border-bottom: 2px solid var(--red); display: inline-block; }
+    .article-body h3 { font-size: 17px; font-weight: 700; color: var(--gray-dark); margin: 28px 0 8px; }
+    .article-body ul { padding-left: 0; list-style: none; margin-bottom: 20px; }
+    .article-body ul li { padding: 8px 0 8px 28px; position: relative; border-bottom: 1px solid #f0f0f0; }
+    .article-body ul li::before { content: "→"; position: absolute; left: 0; color: var(--red); font-weight: 700; }
+    .article-body blockquote { border-left: 4px solid var(--red); background: var(--gray-light); padding: 20px 24px; margin: 32px 0; border-radius: 0 8px 8px 0; font-style: italic; color: var(--gray-mid); font-size: 17px; line-height: 1.7; }
+    .article-body strong { color: var(--gray-dark); }
+
+    /* IMAGE PLACEHOLDER */
+    .img-placeholder {
+      width: 100%; border-radius: 10px; margin: 36px 0;
+      background: var(--gray-light); border: 2px dashed var(--border);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 10px; color: #aaa; padding: 48px 20px; text-align: center;
+    }
+    .img-placeholder .icon { font-size: 40px; }
+    .img-placeholder p { font-size: 13px; font-weight: 500; }
+    .img-placeholder span { font-size: 11px; color: #ccc; }
+
+    .divider { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .tag { background: var(--gray-light); border: 1px solid var(--border); color: var(--gray-mid); font-size: 12px; padding: 5px 14px; border-radius: 20px; transition: background .2s; }
+    .tag:hover { background: var(--red); color: #fff; border-color: var(--red); }
+
+    /* CTA BOX */
+    .cta-box { background: linear-gradient(135deg, var(--gray-dark), #2d2d2d); border-radius: 12px; padding: 36px 32px; margin: 48px 0; text-align: center; }
+    .cta-box h3 { color: #fff; font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+    .cta-box p { color: #bbb; font-size: 14px; margin-bottom: 22px; }
+    .cta-box a { display: inline-block; background: var(--red); color: #fff; font-weight: 700; font-size: 14px; padding: 12px 28px; border-radius: 6px; transition: background .2s; }
+    .cta-box a:hover { background: var(--red-dark); }
+
+    /* MORE POSTS */
+    .more-posts { background: var(--gray-light); padding: 64px 20px; }
+    .more-posts-inner { max-width: 1200px; margin: 0 auto; }
+    .section-title { font-size: 24px; font-weight: 800; margin-bottom: 32px; }
+    .section-title span { color: var(--red); }
+    .posts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 24px; }
+    .post-card { background: var(--white); border-radius: 10px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,.07); transition: transform .25s, box-shadow .25s; display: block; }
+    .post-card:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(0,0,0,.13); }
+    .card-img-placeholder { width: 100%; height: 170px; background: linear-gradient(135deg, #e8e8e8, #d0d0d0); display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 12px; }
+    .post-card-body { padding: 18px; }
+    .post-card-cat { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--red); margin-bottom: 6px; }
+    .post-card h3 { font-size: 14px; font-weight: 600; line-height: 1.4; margin-bottom: 8px; }
+    .post-card-date { font-size: 11px; color: #aaa; }
+
+    /* FOOTER */
+    footer { background: #111; color: #888; padding: 56px 20px 28px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 36px; margin-bottom: 40px; }
+    .footer-col h4 { color: #fff; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 10px; }
+    .footer-col a { color: #888; font-size: 13px; transition: color .2s; }
+    .footer-col a:hover { color: #fff; }
+    .footer-bottom { max-width: 1200px; margin: 0 auto; border-top: 1px solid #222; padding-top: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+    .footer-logo { font-size: 18px; font-weight: 800; color: #fff; }
+    .footer-logo span { color: var(--red); }
+    .footer-bottom p { font-size: 12px; }
+
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .hero-img-placeholder { height: 300px; }
+      .posts-grid { grid-template-columns: 1fr 1fr; }
+      .topbar-links { display: none; }
+    }
+    @media (max-width: 480px) {
+      .posts-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="topbar-links">
+        <a href="#">Sobre nós</a>
+        <a href="#">Financiamento</a>
+        <a href="#">Blog</a>
+        <a href="#">Contato</a>
+      </div>
+      <div class="topbar-btns">
+        <a href="tel:+5500000000000" class="btn-red">📞 Ligar Agora</a>
+        <a href="https://wa.me/5500000000000" target="_blank" class="btn-green">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo">Selec<span>Trucks</span></a>
+      <nav>
+        <a href="#">Estoque</a>
+        <a href="#">Caminhões</a>
+        <a href="#">Ônibus</a>
+        <a href="#">Implementos</a>
+        <a href="#">Financiamento</a>
+        <a href="#">Blog</a>
+        <a href="#">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <img src="Pictures/Pic 1.jpeg" alt="Caminhões Usados – SelecTrucks" style="width:100%;height:480px;object-fit:cover;display:block;" />
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <span class="hero-cat">Mercado de Caminhões</span>
+        <h1>Caminhões Usados: Como Escolher o Modelo Ideal Sem Prejuízo em 2026</h1>
+        <div class="hero-meta">
+          <strong style="color:#fff;">SelecTrucks</strong>
+          <span style="opacity:.4">•</span>
+          13 de maio de 2026
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARTICLE -->
+  <main>
+    <div class="content-wrap">
+
+      <div class="share-bar">
+        <p>Compartilhar:</p>
+        <a href="#" class="share-btn" title="Facebook">f</a>
+        <a href="#" class="share-btn" title="WhatsApp">W</a>
+        <a href="#" class="share-btn" title="LinkedIn">in</a>
+        <a href="#" class="share-btn" title="Twitter/X">𝕏</a>
+      </div>
+
+      <article class="article-body">
+
+        <p>Comprar <strong>caminhões usados</strong> pode ser uma das decisões mais inteligentes para empresas e motoristas que desejam reduzir custos sem abrir mão de desempenho, produtividade e segurança. Com o aumento dos preços dos veículos novos, o mercado de caminhões seminovos e usados cresceu rapidamente e se tornou uma alternativa estratégica para quem busca ampliar a frota ou começar no transporte com um investimento mais acessível.</p>
+
+        <p>Mas existe um ponto importante: escolher o caminhão errado pode gerar altos custos com manutenção, consumo excessivo de combustível e até parada operacional. Por isso, entender como avaliar caminhões usados se tornou essencial para fazer um bom negócio.</p>
+
+        <blockquote>Neste artigo, você vai entender o que analisar antes da compra, quais cuidados tomar e por que empresas estão priorizando caminhões usados como solução para aumentar rentabilidade e acelerar operações.</blockquote>
+
+        <h2>Por Que o Mercado de Caminhões Usados Cresceu Tanto?</h2>
+
+        <p>O setor de transporte vive uma transformação. Muitas empresas passaram a buscar alternativas mais inteligentes para expandir suas operações sem comprometer o caixa com financiamentos elevados ou longos prazos de entrega.</p>
+
+        <p>Nesse cenário, os caminhões usados ganharam destaque por oferecer:</p>
+        <ul>
+          <li>Menor investimento inicial</li>
+          <li>Maior disponibilidade imediata</li>
+          <li>Custo-benefício mais atrativo</li>
+          <li>Menor desvalorização</li>
+          <li>Possibilidade de retorno financeiro mais rápido</li>
+        </ul>
+
+        <p>Além disso, modelos bem conservados conseguem entregar excelente desempenho operacional, principalmente quando possuem histórico de manutenção e procedência confiável.</p>
+
+        <img src="Pictures/Pic 2.jpeg" alt="Frota de Caminhões Usados – SelecTrucks" style="width:100%;border-radius:10px;margin:36px 0;object-fit:cover;max-height:450px;display:block;" />
+
+        <h2>O Que Avaliar Antes de Comprar Caminhões Usados</h2>
+
+        <p>A compra de caminhões usados exige atenção aos detalhes. Um veículo aparentemente conservado pode esconder problemas mecânicos que impactam diretamente no custo da operação.</p>
+
+        <p>Os principais pontos de atenção são:</p>
+
+        <h3>Histórico de manutenção</h3>
+        <p>Um caminhão com revisões registradas transmite mais segurança e previsibilidade de custos.</p>
+
+        <h3>Quilometragem</h3>
+        <p>A quilometragem deve ser analisada junto ao histórico de uso. Nem sempre um caminhão mais rodado significa um veículo ruim.</p>
+
+        <h3>Estado do motor e transmissão</h3>
+        <p>Esses componentes representam parte significativa do valor do veículo e dos custos futuros de manutenção.</p>
+
+        <h3>Estrutura e chassi</h3>
+        <p>Avaliar sinais de corrosão, trincas ou adaptações inadequadas é fundamental.</p>
+
+        <h3>Consumo de combustível</h3>
+        <p>O consumo impacta diretamente a rentabilidade da operação no longo prazo.</p>
+
+        <img src="Pictures/Pic 3.jpeg" alt="Inspeção de Caminhão Usado – SelecTrucks" style="width:100%;border-radius:10px;margin:36px 0;object-fit:cover;max-height:450px;display:block;" />
+
+        <h2>Caminhões Usados Podem Ser Mais Lucrativos do Que Caminhões Novos?</h2>
+
+        <p>Em muitos casos, sim. Empresas que trabalham com logística, distribuição e transporte regional frequentemente optam por caminhões usados devido ao menor custo operacional inicial. Isso permite:</p>
+
+        <ul>
+          <li>Ampliar frota mais rapidamente</li>
+          <li>Aumentar capacidade operacional</li>
+          <li>Preservar fluxo de caixa</li>
+          <li>Reduzir tempo de retorno sobre investimento</li>
+        </ul>
+
+        <p>Além disso, caminhões usados já passaram pela maior fase de desvalorização, tornando o investimento mais estável ao longo do tempo.</p>
+
+        <h2>Como Evitar Problemas na Compra de Caminhões Usados</h2>
+
+        <p>Um dos maiores erros é comprar apenas pelo preço. O ideal é priorizar:</p>
+
+        <ul>
+          <li>Procedência do veículo</li>
+          <li>Avaliação técnica especializada</li>
+          <li>Documentação regular</li>
+          <li>Histórico completo do veículo</li>
+          <li>Fornecedores especializados e confiáveis</li>
+        </ul>
+
+        <p>Empresas especializadas no segmento conseguem oferecer maior segurança no processo de compra, além de opções revisadas e prontas para operação.</p>
+
+        <img src="Pictures/Pic 4.jpeg" alt="Caminhão na Estrada – SelecTrucks" style="width:100%;border-radius:10px;margin:36px 0;object-fit:cover;max-height:450px;display:block;" />
+
+        <h2>Vale a Pena Investir em Caminhões Usados em 2026?</h2>
+
+        <p>Com o crescimento do transporte rodoviário e a necessidade constante de otimização de custos, os caminhões usados continuam sendo uma solução estratégica para empresas e profissionais do setor.</p>
+
+        <p>A chave está em realizar uma compra inteligente, avaliando qualidade, histórico e confiabilidade do veículo. Quando escolhidos corretamente, caminhões usados podem entregar:</p>
+
+        <ul>
+          <li>Alta produtividade</li>
+          <li>Excelente custo-benefício</li>
+          <li>Menor impacto financeiro</li>
+          <li>Maior velocidade de expansão operacional</li>
+        </ul>
+
+        <h2>Conclusão</h2>
+
+        <p>O mercado de caminhões usados se tornou uma alternativa cada vez mais estratégica para quem busca eficiência, economia e crescimento operacional. Mais do que reduzir custos, escolher o veículo certo significa aumentar produtividade e garantir maior previsibilidade para o negócio.</p>
+
+        <p>Antes de fechar negócio, avalie procedência, manutenção, desempenho e suporte especializado. Esses fatores fazem toda a diferença para transformar a compra de caminhões usados em um investimento inteligente e sustentável no longo prazo.</p>
+
+        <!-- CTA -->
+        <div class="cta-box">
+          <h3>Encontre o Caminhão Ideal para o Seu Negócio</h3>
+          <p>Confira nosso estoque de caminhões usados selecionados com procedência e qualidade garantidas.</p>
+          <a href="#">Ver Estoque Disponível →</a>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="tags">
+          <span class="tag">Caminhões Usados</span>
+          <span class="tag">Frota</span>
+          <span class="tag">Transporte</span>
+          <span class="tag">Mercado 2026</span>
+          <span class="tag">SelecTrucks</span>
+        </div>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- MORE POSTS -->
+  <section class="more-posts">
+    <div class="more-posts-inner">
+      <h2 class="section-title">Mais <span>Posts</span></h2>
+      <div class="posts-grid">
+        <a href="#" class="post-card">
+          <div class="card-img-placeholder">📷 Imagem do Post</div>
+          <div class="post-card-body">
+            <p class="post-card-cat">Mercado</p>
+            <h3>Título do Post Relacionado</h3>
+            <p class="post-card-date">Data</p>
+          </div>
+        </a>
+        <a href="#" class="post-card">
+          <div class="card-img-placeholder">📷 Imagem do Post</div>
+          <div class="post-card-body">
+            <p class="post-card-cat">Mercado</p>
+            <h3>Título do Post Relacionado</h3>
+            <p class="post-card-date">Data</p>
+          </div>
+        </a>
+        <a href="#" class="post-card">
+          <div class="card-img-placeholder">📷 Imagem do Post</div>
+          <div class="post-card-body">
+            <p class="post-card-cat">Dicas</p>
+            <h3>Título do Post Relacionado</h3>
+            <p class="post-card-date">Data</p>
+          </div>
+        </a>
+        <a href="#" class="post-card">
+          <div class="card-img-placeholder">📷 Imagem do Post</div>
+          <div class="post-card-body">
+            <p class="post-card-cat">Dicas</p>
+            <h3>Título do Post Relacionado</h3>
+            <p class="post-card-date">Data</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Vendas</h4>
+        <ul>
+          <li><a href="#">Caminhões</a></li>
+          <li><a href="#">Ônibus</a></li>
+          <li><a href="#">Implementos</a></li>
+          <li><a href="#">Financiamento</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Trabalhe Conosco</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Localização</h4>
+        <ul>
+          <li><a href="#">Unidade 1 – Endereço</a></li>
+          <li><a href="#">Unidade 2 – Endereço</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+5500000000000">📞 (00) 0000-0000</a></li>
+          <li><a href="https://wa.me/5500000000000">💬 WhatsApp</a></li>
+          <li><a href="mailto:contato@selectrucks.com.br">✉️ E-mail</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-logo">Selec<span>Trucks</span></div>
+      <p>© 2026 SelecTrucks. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
